@@ -1,4 +1,5 @@
 <script setup>
+
 const route = useRoute()
 const colorMode = useColorMode()
 const isDark = computed({
@@ -26,8 +27,22 @@ const links = [[
   }
 ]
 ]
+
+const handler = () => {
+  console.log('hi');
+}
 </script>
 
 <template>
-  <UHorizontalNavigation :links="links" class="border-b border-gray-200 dark:border-gray-800" />
+  <div>
+
+    <UHorizontalNavigation :links="links" class="border-b border-gray-200 dark:border-gray-800" />
+    <div class="h-screen items-center justify-center">
+      <div class="">
+        <UButton @click="handler">Find out Today random place in Tokyo!</UButton>
+        <UButton @click="handler">Find out Today random place in Tokyo!</UButton>
+      </div>
+
+    </div>
+  </div>
 </template>
