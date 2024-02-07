@@ -12,10 +12,13 @@
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.3.2",
     "nuxt": "^3.10.0",
+    "nuxt-svgo": "^4.0.0",
+    "nuxt-svgo-loader": "^0.3.0",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@nuxt/ui": "^2.13.0"
+    "@nuxt/ui": "^2.13.0",
+    "vite-svg-loader": "^5.1.0"
   }
 }
